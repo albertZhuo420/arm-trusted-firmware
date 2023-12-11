@@ -8,6 +8,10 @@ cscope.*
 
 # Ignore build directory
 build/
+# 忽略自定义的编译文件夹
+my_build_output/
+# 忽略__pycache__文件夹
+*__pycache__/ 
 
 # Ignore build products from tools
 tools/**/*.o
