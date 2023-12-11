@@ -1,7 +1,10 @@
 # Set default path
 SRC_PATH ?= $(PWD)
-BLD_PATH ?= $(SRC_PATH)/../build
-DEPLOYDIR ?= $(SRC_PATH)/../deploy
+# 修改编译路径, my_build_output需要手动创建
+BLD_PATH ?= $(SRC_PATH)/my_build_output/build
+DEPLOYDIR ?= $(SRC_PATH)/my_build_output/deploy
+# BLD_PATH ?= $(SRC_PATH)/../build
+# DEPLOYDIR ?= $(SRC_PATH)/../deploy
 
 BL31_DEPLOYDIR     ?= $(DEPLOYDIR)/bl31
 BL32_DEPLOYDIR     ?= $(DEPLOYDIR)/bl32
